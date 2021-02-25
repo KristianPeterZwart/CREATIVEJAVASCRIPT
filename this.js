@@ -1,18 +1,27 @@
 // A POINTER -> IT REFERS TO AN OBJECT
 
-const user = {
-    name: "Kristian Zwart",
-};
-const admin = {
-    name: "admin"
-};
+// const user = {
+//    name: "Kristian Zwart",
+// };
+// const admin = {
+    // name: "admin"
+// };
+// 
+// function yell() {
+    // console.log(this.name.toUpperCase());
+// }
+// 
+// user.yell = yell;
+// admin.hi = yell;
+// 
+// user.yell();
+// admin.yell();
 
-function yell() {
-    console.log(this.name.toUpperCase());
-}
+const lists = document.querySelectorAll("li");
 
-user.yell = yell;
-admin.yell = yell;
 
-user.yell();
-admin.yell();
+lists.forEach(li => {
+    li.addEventListener("click", function() {
+    console.log(this);    
+    });
+});

@@ -7,11 +7,12 @@ const admin = {
     name: "admin"
 };
 
-function sayHi() {
-    console.log(this);
+function yell() {
+    console.log(this.name.toUpperCase());
 }
 
-user.hi = sayHi;
-admin.hi = sayHi;
+user.yell = yell;
+admin.yell = yell;
 
-user.hi();
+user.yell();
+admin.yell();

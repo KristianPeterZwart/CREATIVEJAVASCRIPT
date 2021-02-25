@@ -11,8 +11,7 @@ const newVideos = videos.map(function(video) {
 });
 
 // Using arrow functions
-const arrowVideos = videos.map((video) => {
-    return video.length < 10 ? video : "nope";
+const arrowVideos = videos.map(video => (video.length < 10 ? video : "nope";
 });
 
 console.log(arrowVideos);

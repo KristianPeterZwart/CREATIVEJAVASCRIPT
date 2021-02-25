@@ -2,9 +2,13 @@
 
 const user = {
     name: "Kristian Zwart",
-    sayHi() {
-        console.log(this);
-    }
+};
+const admin = {
+    name: "admin"
 };
 
-user.sayHi();
+function sayHi() {
+    console.log(this);
+}
+
+sayHi();

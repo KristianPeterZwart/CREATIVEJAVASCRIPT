@@ -31,6 +31,7 @@ const user = {
     videos: ["html", "css", "js", "react"],
     greet() {
         console.log(`Hello there ${this.name}`);
+        this.videos.forEach(video => {
     // ADD FUNCTION
         const getVideos = () => { 
             console.log(`You currently have ${this.videos.length} videos`);

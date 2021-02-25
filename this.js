@@ -17,11 +17,26 @@
 // user.yell();
 // admin.yell();
 
-const lists = document.querySelectorAll("li");
+// const lists = document.querySelectorAll("li");
+// 
+// 
+// lists.forEach(li => {
+    // li.addEventListener("click", function() {
+    // console.log(this);    
+    // });
+// });
 
+const user = {
+    name: "kriszwart",
+    videos: ["html", "css", "js", "react"],
+    greet() {
+        console.log(`Hello there ${this.name}`);
+    // ADD FUNCTION
+        const getVideos = () => { 
+            console.log(`You currently have ${this.videos.length} videos`);
+        };
+        getVideos();
+    }
+};
 
-lists.forEach(li => {
-    li.addEventListener("click", function() {
-    console.log(this);    
-    });
-});
+user.greet();

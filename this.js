@@ -11,4 +11,7 @@ function sayHi() {
     console.log(this);
 }
 
-sayHi();
+user.hi = sayHi;
+admin.hi = sayHi;
+
+user.hi();

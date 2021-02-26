@@ -4,12 +4,12 @@ function Todo(name, completed) {
     this.name = name;
     this.completed = completed;
     this.getTodoName = function(){
-        return this.name;
+      console.log(this.name);
     }
 }
 
 const todo = new Todo("Buy Chicken", false);
-const todo2 = new Todo("Do my Homework", false)
+const todo2 = new Todo("Do my Homework", false);
 
-console.log(todo, todo2);
-
+todo.getTodoName();
+todo2.getTodoName();

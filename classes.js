@@ -15,3 +15,16 @@ const bug = new Enemy(1, "Bobby", 1);
 
 turtle.getInfo();
 bug.getInfo();
+
+class Bug extends Enemy {
+    constructor(life, name, level, legs, dmg){
+      super(life, name, level);  
+      this.legs = legs;
+      this.dmg = dmg;
+    }
+}
+
+const john = new Bug(10, "Buggy", 1, 6, 10);
+
+console.log(john);
+john.getInfo();

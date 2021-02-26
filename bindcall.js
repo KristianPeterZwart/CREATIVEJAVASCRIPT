@@ -11,11 +11,14 @@ const person = {
     }
 };
 
-function registerUser() {
+function registerUser(country, lang) {
     //Additional functionality...
-    console.log(this);
+    this.getName()
+    console.log(`My country is ${country} and my language is ${lang}`);
 }
 
-const register = registerUser;
+// const register = registerUser.bind(person);
+// register("Spain", "English");
 
-console.log(registerUser.bind(person));
+registerUser.call(person, "England", "English");
+registerUser.apply(person, ["England", "English"])
